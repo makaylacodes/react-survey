@@ -1,0 +1,40 @@
+#root, html, body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Palatino Linotype', sans-serif;
+    scroll-behavior: smooth;
+    
+  }
+  .card {
+    background-color: rgba(52, 74, 130, 0.44);
+    max-width: 50%;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 10px 10px;
+    border-style: solid;
+    border-color: black;
+    margin: 5% 0% 0% 20%;
+    padding: 0% 3% 0% 3%;
+    display:flex;
+  }
+
+.list {
+    border-style: solid;
+    padding: 10px 0px 10px 0px;
+}
+.title{
+    text-align: center;
+}
+.link{
+    color: #fff;
+}
+#footer{
+    color: #fff;
+    font-size: 105%;
+    background: rgb(84, 94, 121);
+    text-align: center;
+    margin: 2rem 0 0 0;
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
