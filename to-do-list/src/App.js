@@ -14,7 +14,6 @@ const Footer = () => {
       </footer>
   );
 };
-
 const App = () => {
   const [notes, setNotes] = useState([]);
   const [newNote, setNewNote] = useState('');
@@ -91,6 +90,8 @@ const App = () => {
       </ol>
       
       </div>
+      <br />
+      <br />
       <Footer />
 
       
