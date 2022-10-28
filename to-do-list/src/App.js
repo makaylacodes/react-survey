@@ -59,17 +59,19 @@ const App = () => {
 
   const toggleImportanceOf = (id) => {
     console.log(`Importance of ${id} needs to be toggled`);
-    const note = notes.find(n => n.id === id)
+    const note = notes.find(n => n.id === id);
+    console.log("This is the note in toggle ", note);
+
     const changedNote = { ...note, important: !note.important }
+    console.log("This is the changed note ", changedNote);
 
     noteService
-      .update(id, changedNote)
+      .updateOne(id, changedNote)
       .then(returnedNote => {
         setNotes(notes.map(note => note.id !== id ? note : returnedNote))
       })
       .catch(error => {
         alert( `the note '${note.content}' has already been deleted from the server `)
-        setNotes(notes.filter(n => n.id !== id))
       })
   };
 

@@ -15,16 +15,11 @@ code {
   color:#fff
 }
 #footer{
+  padding: .5rem;
   text-align: center;
-  font-size: 105%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  font-weight: 700;
+  margin: 2rem 0 0;
   background: rgb(84, 94, 121);
-  height: 8%;
-  padding-top: 5px;
-  padding-bottom: 25px;
   color:#fff;
 }
   .card {
